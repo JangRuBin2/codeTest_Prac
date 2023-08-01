@@ -3,7 +3,7 @@ function minimumSwaps(arr) {
   let swapCount = 0;
   const centerIndex = Math.floor(n/2);
   const centerNum = arr[centerIndex];
-  const leftNum = [...arr.slice(0, centerNum)];
+  const leftNum = [...arr.slice(0, centerNum+1)];
   return leftNum;
   }
   console.log(minimumSwaps([7, 1, 3, 2, 4, 5, 6]))
