@@ -1,16 +1,8 @@
-function test(a, b, d) {
-  const c = {};
-  //forEach, for of, for in 모두 같은 결과 출력
-  a.forEach(data=> {
-    c[a]++;
+function test(a, b) {
+  b.forEach(word=> {
+    // 배열에서 특정 요소가 없으면 -1반환
+    const c = a.indexOf(word);
+    console.log(c)
   })
-  for(const word of b) {
-    c[b]++;
-  }
-  for(const word in d) {
-    c[d]++;
-  }
-  console.log(c);
 }
-test([1,'2',3], ['안','녕','??'], ['a', 'b', 'c']);
-
+test([1, 2, 3, 4], [2, 4])
