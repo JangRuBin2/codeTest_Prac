@@ -5,5 +5,5 @@ const test = {
 };
 console.log(test);
 for (key in test) {
-  console.log(key);
+  console.log(key, ':' , test[key]);
 }
