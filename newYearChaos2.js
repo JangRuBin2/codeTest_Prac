@@ -3,6 +3,7 @@ function minimumBribes(q) {
   const n = q.length;
   for(let i=0; i<n; i++) {
       const originalPos = q[i]-(i+1);
+      console.log(originalPos)
       if(originalPos > 2) {
           return console.log("Too chaotic");
       };
