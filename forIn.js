@@ -4,3 +4,6 @@ const test = {
   sex : 'man'
 };
 console.log(test);
+for (key in test) {
+  console.log(key);
+}
